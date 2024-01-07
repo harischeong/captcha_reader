@@ -177,7 +177,7 @@ Distributed under the MIT License.
 
 Haris Cheong - [@twitter_handle](https://twitter.com/twitter_handle) - haris.cheong@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/harischeong/captcha_reader](https://github.com/harischeong/captcha_reader)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
