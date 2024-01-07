@@ -225,4 +225,5 @@ I have learnt so much from these repositories the last few hours, please feel fr
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-[Python-url]: https://www.python.org/static/img/python-logo.png
+[Python]: https://www.python.org/static/img/python-logo.png 
+[Python-url]: https://www.python.org/downloads/
