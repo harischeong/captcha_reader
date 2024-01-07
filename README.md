@@ -19,8 +19,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]](https://github.com/harischeong)
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/haris-cheong/)
 
 
@@ -28,23 +26,20 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/harischeong/captcha_reader">
+    <img src="images/logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Captcha reader</h3>
 
   <p align="center">
-    project_description
+    This OCR reader can read captchas automatically and provide performance metrics like levenshtein distance, character error rate and word error rate.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/harischeong/captcha_reader/tree/master"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/harischeong/captcha_reader/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/harischeong/captcha_reader/issues">Request Feature</a>
   </p>
 </div>
 
@@ -80,10 +75,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This project provides a wrapper around a pre-trained OCR reader from EasyOCR open source python package.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,14 +83,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][Python]][python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,44 +91,43 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Please install all the files in the requirements.txt with
+```sh
+pip install -r requirements.txt
+```
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You may install the requirements in your existing environment, but it is highly recommended to install a virtual environment to prevent version clash in your other projects.
 
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
+There are two classes in this repository. The inference class is called "Captcha" and can be instantiated using
+```sh
+import reader
+reader_captcha = reader.Captcha()
+```
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+You can call the inference method using
+```sh
+reader_captcha(path_img, path_save)
+```
+,where 
+```sh
+path_img
+```
+is the path to the captcha file and
+```sh
+path_save
+```
+is the path to where you want your predictions to be saved.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+NOTE: please use the .txt file extension to save your predictions.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,10 +136,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Add training function.
+- [ ] Add automatic train/test/validation split.
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
@@ -184,7 +166,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,7 +175,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Haris Cheong - [@twitter_handle](https://twitter.com/twitter_handle) - haris.cheong@gmail.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
@@ -203,10 +185,10 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
+I have learnt so much from these repositories the last few hours, please feel free to peruse their repository for a rich source of information about OCR.
 
-* []()
-* []()
-* []()
+* [Clove AI](https://github.com/clovaai/deep-text-recognition-benchmark)
+* [Easy OCR](https://github.com/JaidedAI/EasyOCR)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -243,3 +225,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Python-url]: https://www.python.org/static/img/python-logo.png
