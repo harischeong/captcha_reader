@@ -18,10 +18,10 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][https://github.com/harischeong]
+[![Contributors][contributors-shield]](https://github.com/harischeong)
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/haris-cheong/]
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/haris-cheong/)
 
 
 
