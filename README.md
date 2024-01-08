@@ -129,6 +129,24 @@ is the path to where you want your predictions to be saved.
 NOTE: please use the .txt file extension to save your predictions.
 
 
+## Metrics
+To calculate the levenshtein distance, character error rate and word error rate, first import the test script:
+```sh
+import test
+```
+
+Then, instantiate the Tester class with the list of the predicted .txt files and the list of the ground truth files:
+```sh
+tester = test.Tester(list_pred, list_gt)
+```
+
+Then call the
+```sh
+tester.all_metrics()
+```
+method. This will return the levenshtein distance, character error rate and word error rate respectively.
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
